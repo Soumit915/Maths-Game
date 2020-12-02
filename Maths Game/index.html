@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Maths Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <div id="scoreboard">Score: <span id="scorevalue">0</span></div>
+            <div id="correct">Correct</div>
+            <div id="wrong">Try Again</div>
+            <div id="displayboard"></div>
+            <div id="instruction">Click on the correct answer</div>
+            <div id="options">
+                <div class="option" id="optiona" onclick="checkAnswer(id)"></div>
+                <div class="option" id="optionb" onclick="checkAnswer(id)"></div>
+                <div class="option" id="optionc" onclick="checkAnswer(id)"></div>
+                <div class="option" id="optiond" onclick="checkAnswer(id)"></div>
+            </div>
+            <div id="startgame" onclick="startgame()">Start Game</div>
+            <div id="timeremaining">Time remaining: <span id="timervalue">60</span> sec</div>
+            <div id="gameover">
+                <p>Game Over!</p>
+                <p>Your Score is <span id="finalscore">0</span>.</p>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
